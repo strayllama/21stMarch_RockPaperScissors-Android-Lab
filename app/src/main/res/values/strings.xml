@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Rock Paper Scissors</string>
+    <string name="games_rules_title">Game Rules</string>
+    <string name="games_rules_1">1 - Click play below to start.\n
+                               2 - Choose your hand from the three options:\n
+                                  a) Paper, b) Rock, c) Scissors\n
+                               3 - The computer will play his hand against yours\n
+                               4 - Winner is announced.</string>
+    <string name="scores_title">Scores on the Doors</string>
+    <string name="player_label">Player Score:</string>
+    <string name="Reset_Score">Reset scores</string>
 </resources>

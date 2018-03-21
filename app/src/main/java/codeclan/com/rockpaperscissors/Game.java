@@ -39,11 +39,13 @@ public class Game {
 
         String result = "";
         if (player.equals(comp)) {
-            result = ("It's a draw, you both chose: " + comp + player);
+            result = ("It's a draw, the computer chose " + comp + " aswell!");
         } else if (win.get(player).equals(comp)) {
-            result = ("Player won! " + player + " beats " + comp);
+            result = ("Player won! Your " + player + " beats computers " + comp);
+            ScoreBoard.addToPlayer();
         } else if (win.get(comp).equals(player)) {
-            result = ("Computer won! " + comp + " beats " + player);
+            result = ("Computer won! Its " + comp + " beats your " + player);
+            ScoreBoard.addToComputer();
         } else { result = "wrong logic in code! 011010101"; }
 
         return result;

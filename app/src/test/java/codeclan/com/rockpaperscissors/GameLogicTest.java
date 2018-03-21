@@ -17,6 +17,25 @@ public class GameLogicTest {
         rpsGame = new Game(Hand.PAPER);
     }
 
+    @Test
+    public void seeScores() {
+        assertEquals(0, ScoreBoard.getPlayerScore());
+    }
+
+    @Test
+    public void addToScores() {
+        ScoreBoard.addToPlayer();
+        assertEquals(1, ScoreBoard.getPlayerScore());
+    }
+
+    @Test
+    public void resetScores() {
+        ScoreBoard.addToPlayer();
+        ScoreBoard.addToPlayer();
+        ScoreBoard.resetScoreboard();
+        assertEquals(0, ScoreBoard.getPlayerScore());
+    }
+
 //    @Test
 //    public void gameHasComputerHand() {
 //        assertEquals(Hand.PAPER, rpsGame.getComputerHand());
